@@ -71,6 +71,11 @@ public class GeoController : MonoBehaviour
                     SceneManager.LoadScene(nextLevel);
                     break;
                 }
+            case "Coin":
+                {
+                    Destroy(collision.gameObject);
+                    break;
+                }
         }
     }
 }
